@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'backend',
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
+    # 'dbview',
+    'whitenoise.runserver_nostatic',
+    'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +53,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_plotly_dash.middleware.BaseMiddleware',
+    'django_plotly_dash.middleware.ExternalRedirectionMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'energysta.urls'
@@ -78,11 +88,19 @@ WSGI_APPLICATION = 'energysta.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-	'NAME': 'energystata_db',
+	    'NAME': 'energystata_db',
         'USER': 'energystata_user',
         'PASSWORD': 'energy$t@t@',
         'HOST': 'localhost',
         'PORT': '',
+    },
+    'energyst_pi': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'energyst_pi',
+        'USER': 'energyst_cracken',
+        'PASSWORD': 'projectplc$$',
+        'HOST': 'energystata.com',
+        'PORT': '3306'
     }
 }
 

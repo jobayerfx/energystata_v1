@@ -21,6 +21,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin2/', admin.site.urls),
     path('home/', include('backend.urls')),
+    path('django_plotly_dash/', include('django_plotly_dash.urls')),
+    
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
