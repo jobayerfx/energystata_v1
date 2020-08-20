@@ -94,14 +94,14 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '',
     },
-    # 'energyst_pi': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'energyst_pi',
-    #     'USER': 'energyst_cracken',
-    #     'PASSWORD': 'projectplc$$',
-    #     'HOST': 'energystata.com',
-    #     'PORT': '3306'
-    # }
+    'energyst_pi': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'energyst_pi',
+        'USER': 'energyst_cracken',
+        'PASSWORD': 'projectplc$$',
+        'HOST': 'energystata.com',
+        'PORT': '3306'
+    }
 }
 
 
