@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'backend',
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
-    'dbview',
+    # 'dbview',
     # 'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
 ]
