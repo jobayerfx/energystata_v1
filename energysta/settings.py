@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'energysta.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
 	    'NAME': 'energystata_db',
         'USER': 'energystata_user',
         'PASSWORD': 'energy$t@t@',
