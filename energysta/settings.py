@@ -138,6 +138,19 @@ USE_L10N = True
 USE_TZ = True
 
 
+PLOTLY_COMPONENTS = [
+    'dash_core_components',
+    'dash_html_components',
+    'dash_renderer',
+    'dpd_components',
+    'dpd_static_support',
+    # Other components, as needed
+    'dash_bootstrap_components',
+
+]
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
